@@ -210,7 +210,7 @@
             </div>
             <div class="card-body p-2">
                 <a href="{{ route('home') }}" target="_blank" class="btn btn-sm btn-outline-primary btn-block mb-1 text-left">
-                    <i class="fas fa-external-link-alt mr-2"></i> Ver Sitio Web myclegalgroup.com
+                    <i class="fas fa-external-link-alt mr-2"></i> Ver Sitio Web M&amp;C LEGAL GROUP
                 </a>
                 <a href="{{ route('admin.practice-areas.create') }}" class="btn btn-sm btn-outline-secondary btn-block mb-1 text-left">
                     <i class="fas fa-plus-circle mr-2"></i> Añadir Área de Práctica

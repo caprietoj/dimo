@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Consultoría de Alto Nivel - myclegalgroup.com (Grid Focused)')
+@section('title', 'Consultoría de Alto Nivel - M&C LEGAL GROUP (Grid Focused)')
 
 @section('content')
 <!-- Grid Focused Architecture for "Consultoría de Alto Nivel" -->

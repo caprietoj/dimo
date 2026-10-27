@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
-    <title>@yield('title', 'myclegalgroup.com - Grid Focused')</title>
+    <title>@yield('title', 'M&C LEGAL GROUP - Grid Focused')</title>
 
     <!-- Google Fonts: Inter for UI, Playfair Display for legal headers -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet"/>
@@ -61,14 +61,14 @@
 <!-- Top Navigation Bar (Exact Grid Focused Navbar) -->
 <div class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
     <div class="max-w-7xl mx-auto px-6 min-h-[4.5rem] py-2 flex items-center justify-between">
-        <!-- Logo DIMO con Slogan Debajo -->
+        <!-- Logo M&C LEGAL GROUP con Slogan Debajo -->
         <a href="{{ route('home') }}" class="flex items-center gap-3 py-1 group">
             <div class="bg-primary p-2 rounded text-white flex items-center justify-center shrink-0">
                 <span class="material-symbols-outlined text-2xl">balance</span>
             </div>
             <div class="flex flex-col">
                 <h2 class="text-xl font-black tracking-tight uppercase text-gray-900 dark:text-white leading-tight">
-                    {{ $settings['firm_short_name'] ?? 'myclegalgroup.com' }}
+                    {{ $settings['firm_short_name'] ?? 'M&C LEGAL GROUP' }}
                 </h2>
                 <span class="text-[10px] md:text-xs text-gray-500 dark:text-gray-400 font-medium leading-tight tracking-tight">
                     {{ $settings['firm_slogan'] ?? 'La Ciencia del Derecho aplicada a la Certeza de su Defensa.' }}
@@ -146,7 +146,7 @@
                 <span class="material-symbols-outlined text-sm">tune</span>
                 <span>Panel AdminLTE</span>
             </a>
-            <span class="text-[10px] text-gray-400">myclegalgroup.com</span>
+            <span class="text-[10px] text-gray-400">M&amp;C LEGAL GROUP</span>
         </div>
     </div>
 </div>
@@ -162,14 +162,14 @@
         
         <!-- Columna 1: Identidad Corporativa -->
         <div class="flex flex-col gap-3 max-w-sm">
-            <!-- Logo DIMO idéntico al menú de navegación superior -->
+            <!-- Logo M&C LEGAL GROUP idéntico al menú de navegación superior -->
             <a href="{{ route('home') }}" class="flex items-center gap-3 py-1 group">
                 <div class="bg-primary p-2 rounded text-white flex items-center justify-center shrink-0 shadow-sm">
                     <span class="material-symbols-outlined text-2xl">balance</span>
                 </div>
                 <div class="flex flex-col">
                     <h2 class="text-xl font-black tracking-tight uppercase text-white leading-tight">
-                        {{ $settings['firm_short_name'] ?? 'myclegalgroup.com' }}
+                        {{ $settings['firm_short_name'] ?? 'M&C LEGAL GROUP' }}
                     </h2>
                     <span class="text-[10px] md:text-xs text-gray-400 font-medium leading-tight tracking-tight">
                         {{ $settings['firm_slogan'] ?? 'La Ciencia del Derecho aplicada a la Certeza de su Defensa.' }}
@@ -177,7 +177,7 @@
                 </div>
             </a>
             <p class="text-sm font-bold text-gray-200">
-                {{ $settings['firm_name'] ?? 'myclegalgroup.com' }}
+                {{ $settings['firm_name'] ?? 'M&C LEGAL GROUP' }}
             </p>
             <p class="text-gray-400 text-sm leading-relaxed italic">
                 "{{ $settings['footer_slogan'] ?? 'Excelencia jurídica y rigor técnico al servicio de su seguridad y patrimonio.' }}"

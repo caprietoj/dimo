@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Panel de Control') | myclegalgroup.com - AdminLTE</title>
+    <title>@yield('title', 'Panel de Control') | M&amp;C LEGAL GROUP - AdminLTE</title>
 
     <!-- Google Fonts: Inter for UI & Playfair Display for legal headers -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,700&display=swap" rel="stylesheet"/>
@@ -906,14 +906,14 @@
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <!-- Brand Logo with exact myclegalgroup.com identity -->
+        <!-- Brand Logo with exact M&C LEGAL GROUP identity -->
         <a href="{{ route('admin.dashboard') }}" class="brand-link d-flex align-items-center px-3 py-2">
             <div class="bg-primary rounded text-white d-flex align-items-center justify-content-center mr-2 shadow-sm" style="width: 28px; height: 28px; min-width: 28px; min-height: 28px;">
                 <span class="material-symbols-outlined" style="font-size: 16px;">balance</span>
             </div>
             <div class="d-flex flex-column" style="line-height: 1.15;">
                 <span class="brand-text font-weight-bold text-white" style="font-size: 0.875rem !important; letter-spacing: -0.01em;">
-                    myclegalgroup.com
+                    M&amp;C LEGAL GROUP
                 </span>
                 <span class="text-muted text-uppercase" style="font-size: 0.58rem; letter-spacing: 0.08em; font-weight: 600;">
                     Panel Administrativo

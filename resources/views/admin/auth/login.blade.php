@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Acceso Administrativo | myclegalgroup.com</title>
+    <title>Acceso Administrativo | M&amp;C LEGAL GROUP</title>
 
     <!-- Google Fonts: Inter & Playfair Display -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet"/>
@@ -126,7 +126,7 @@
                     <span class="material-symbols-outlined" style="font-size: 18px;">balance</span>
                 </div>
                 <h1 class="h5 font-weight-bold mb-0 text-dark">
-                    myclegalgroup.com
+                    M&amp;C LEGAL GROUP
                 </h1>
             </div>
             <p class="text-muted text-xs mb-0">Panel de Administración Jurídica</p>

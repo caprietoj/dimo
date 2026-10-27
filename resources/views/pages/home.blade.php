@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', ($settings['firm_short_name'] ?? 'myclegalgroup.com') . ' - ' . ($settings['hero_title'] ?? 'Arquitectura Jurídica Superior'))
+@section('title', ($settings['firm_short_name'] ?? 'M&C LEGAL GROUP') . ' - ' . ($settings['hero_title'] ?? 'Arquitectura Jurídica Superior'))
 
 @section('content')
 <!-- Main Grid Content (Strict DIMO Law Firm - Grid Focused Architecture) -->

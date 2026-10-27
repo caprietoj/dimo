@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
-    <title>{{ $settings['firm_name'] ?? 'myclegalgroup.com' }} - Firma de Abogados | Grid Focused</title>
+    <title>{{ $settings['firm_name'] ?? 'M&C LEGAL GROUP' }} - Firma de Abogados | Grid Focused</title>
     
     <!-- Google Fonts: Inter for UI, Playfair Display for traditional legal headers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,7 +67,7 @@
                 <span class="material-symbols-outlined text-2xl">balance</span>
             </div>
             <h2 class="text-xl font-black tracking-tight uppercase">
-                myclegalgroup.com
+                M&amp;C LEGAL GROUP
             </h2>
         </a>
 
@@ -461,7 +461,7 @@
     </div>
     <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
         <div>
-            © {{ date('Y') }} myclegalgroup.com. Todos los derechos reservados. Abogados Registrados en el CSJ.
+            © {{ date('Y') }} M&amp;C LEGAL GROUP. Todos los derechos reservados. Abogados Registrados en el CSJ.
         </div>
         <div class="flex items-center gap-4">
             <a href="{{ route('admin.dashboard') }}" class="hover:underline">Portal Administrativo</a>

@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Estrategias y Soluciones - myclegalgroup.com (Grid Focused)')
+@section('title', 'Estrategias y Soluciones - M&C LEGAL GROUP (Grid Focused)')
 
 @section('content')
 <!-- Grid Focused Architecture for "Estrategias y Soluciones" -->
@@ -13,7 +13,7 @@
                 Estrategias y Soluciones Jurídicas
             </h1>
             <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                Catálogo especializado de áreas de práctica bajo la metodología y rigor de myclegalgroup.com.
+                Catálogo especializado de áreas de práctica bajo la metodología y rigor de M&amp;C LEGAL GROUP.
             </p>
         </div>
         <a href="{{ route('contact') }}" class="text-primary text-sm font-bold flex items-center gap-1 hover:underline">

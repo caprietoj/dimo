@@ -93,13 +93,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="font-weight-bold">Nombre Completo de la Firma</label>
-                                        <input type="text" name="firm_name" class="form-control" value="{{ $settings['firm_name'] ?? 'myclegalgroup.com' }}">
+                                        <input type="text" name="firm_name" class="form-control" value="{{ $settings['firm_name'] ?? 'M&C LEGAL GROUP' }}">
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label class="font-weight-bold">Nombre Corto / Sigla</label>
-                                        <input type="text" name="firm_short_name" class="form-control" value="{{ $settings['firm_short_name'] ?? 'myclegalgroup.com' }}">
+                                        <input type="text" name="firm_short_name" class="form-control" value="{{ $settings['firm_short_name'] ?? 'M&C LEGAL GROUP' }}">
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -143,7 +143,7 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">Descripción Adicional de Portada</label>
-                                <textarea name="hero_description" rows="2" class="form-control">{{ $settings['hero_description'] ?? 'En myclegalgroup.com, integramos la tradición jurídica con una visión moderna y ágil para ofrecer soluciones estratégicas en un mercado global cambiante.' }}</textarea>
+                                <textarea name="hero_description" rows="2" class="form-control">{{ $settings['hero_description'] ?? 'En M&C LEGAL GROUP, integramos la tradición jurídica con una visión moderna y ágil para ofrecer soluciones estratégicas en un mercado global cambiante.' }}</textarea>
                             </div>
 
                             @include('admin.components.image-picker', [

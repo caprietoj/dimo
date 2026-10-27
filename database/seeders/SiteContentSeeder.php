@@ -137,8 +137,8 @@ class SiteContentSeeder extends Seeder
 
         // 5. Configuración y Textos Globales del Sitio Web (100% Personalizable)
         $settings = [
-            'firm_name' => 'myclegalgroup.com',
-            'firm_short_name' => 'myclegalgroup.com',
+            'firm_name' => 'M&C LEGAL GROUP',
+            'firm_short_name' => 'M&C LEGAL GROUP',
             'firm_slogan' => 'La Ciencia del Derecho aplicada a la Certeza de su Defensa.',
             'footer_slogan' => 'Excelencia jurídica y rigor técnico al servicio de su seguridad y patrimonio.',
             'since_year' => '1994',
