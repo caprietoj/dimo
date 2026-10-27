@@ -223,7 +223,7 @@
                 </p>
                 <div class="flex gap-4 pt-1">
                     <a href="{{ $settings['x_button_url'] ?? 'https://x.com' }}" target="_blank" rel="noopener noreferrer" class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-xl" title="Twitter / X">public</a>
-                    <a href="mailto:{{ $settings['email'] ?? 'contacto@dimo.com.co' }}" class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-xl" title="Correo">mail</a>
+                    <a href="mailto:{{ $settings['email'] ?? 'departamentojuridico@myclegalgroup.com' }}" class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-xl" title="Correo">mail</a>
                     <a href="{{ route('admin.dashboard') }}" class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-xl" title="Panel Admin">tune</a>
                 </div>
             </div>

@@ -206,7 +206,7 @@ class SiteContentSeeder extends Seeder
             'phone' => '+57 (601) 456 7890',
             'schedule' => 'Lun - Vie, 8am - 6pm',
             'address' => "Calle 100 # 15-32, Edificio Amadeus, Piso 7\nBogotá D.C., Colombia",
-            'email' => 'contacto@dimo.com',
+            'email' => 'departamentojuridico@myclegalgroup.com',
             'office_title' => 'Sede Principal Bogotá',
             'footer_copyright' => '© 2026 DIMO - Defensa, Investigación y Metodologías Operacionales. Todos los derechos reservados. El rigor en la fuente, nuestra garantía jurídica.',
         ];

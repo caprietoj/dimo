@@ -615,7 +615,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="font-weight-bold">Correo Institucional de Atención</label>
-                                        <input type="email" name="email" class="form-control" value="{{ $settings['email'] ?? 'contacto@dimo.com.co' }}">
+                                        <input type="email" name="email" class="form-control" value="{{ $settings['email'] ?? 'departamentojuridico@myclegalgroup.com' }}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">

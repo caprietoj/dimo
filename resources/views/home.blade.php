@@ -402,7 +402,7 @@
                         </div>
                         <div class="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                             <span class="material-symbols-outlined text-primary text-lg">mail</span>
-                            <span>{{ $settings['email'] ?? 'contacto@dimo.com.co' }}</span>
+                            <span>{{ $settings['email'] ?? 'departamentojuridico@myclegalgroup.com' }}</span>
                         </div>
                     </div>
                 </div>
