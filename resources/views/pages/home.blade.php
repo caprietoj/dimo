@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', ($settings['firm_short_name'] ?? 'DIMO') . ' Colombia - ' . ($settings['hero_title'] ?? 'Arquitectura Jurídica Superior'))
+@section('title', ($settings['firm_short_name'] ?? 'myclegalgroup.com') . ' - ' . ($settings['hero_title'] ?? 'Arquitectura Jurídica Superior'))
 
 @section('content')
 <!-- Main Grid Content (Strict DIMO Law Firm - Grid Focused Architecture) -->
@@ -20,7 +20,7 @@
                 {{ $settings['hero_phrase'] ?? 'Mediante el Diseño de Metodologías Operativas Orientadas a la Eficacia Procesal y la Prevalencia de la Seguridad Jurídica en Escenarios de Alta Conflictividad.' }}
             </p>
             <div class="flex flex-wrap gap-4">
-                <a href="{{ route('contact') }}" class="bg-primary text-white px-6 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-blue-700 transition-all">
+                <a href="{{ route('contact') }}" class="bg-primary text-white px-6 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-primary-dark transition-all">
                     <span>Consultoría de Alto Nivel</span>
                     <span class="material-symbols-outlined text-sm">arrow_forward</span>
                 </a>
@@ -42,11 +42,11 @@
         <div class="bg-primary text-white p-8 rounded-xl flex flex-col justify-between h-full shadow-sm">
             <span class="material-symbols-outlined text-4xl mb-4">balance</span>
             <div>
-                <span class="text-blue-200 text-xs font-bold uppercase tracking-widest block mb-1">Doctrina Institucional</span>
+                <span class="text-wine-200 text-xs font-bold uppercase tracking-widest block mb-1">Doctrina Institucional</span>
                 <h3 class="grid-header text-2xl md:text-3xl mb-3 leading-snug">
                     {{ $settings['firm_slogan'] ?? 'La Ciencia del Derecho aplicada a la Certeza de su Defensa.' }}
                 </h3>
-                <p class="text-blue-100 text-sm leading-relaxed">
+                <p class="text-wine-100 text-sm leading-relaxed">
                     {{ $settings['slogan_desc'] ?? 'Nuestros procesos están blindados por estándares dogmáticos y rigor ético inexpugnable.' }}
                 </p>
             </div>

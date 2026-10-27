@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Nuestra Firma - ' . ($settings['firm_short_name'] ?? 'DIMO') . ' Colombia')
+@section('title', 'Nuestra Firma - ' . ($settings['firm_short_name'] ?? 'myclegalgroup.com'))
 
 @section('content')
 <!-- Grid Focused Architecture for "Nuestra Firma" (100% Editable) -->
@@ -33,7 +33,7 @@
             <span class="material-symbols-outlined text-4xl mb-4">gavel</span>
             <div>
                 <h3 class="grid-header text-3xl mb-2 italic">{{ $settings['side_quote_title'] ?? 'Defensa Científica' }}</h3>
-                <p class="text-blue-100 text-sm leading-relaxed">
+                <p class="text-wine-100 text-sm leading-relaxed">
                     {{ $settings['side_quote_desc'] ?? 'Transformamos el esfuerzo analítico en certidumbre procesal inexpugnable.' }}
                 </p>
             </div>
@@ -191,7 +191,7 @@
     <div class="md:col-span-12 flex items-end justify-between px-2 pt-8 pb-2 border-b-2 border-primary/20">
         <div>
             <h2 class="grid-header text-3xl font-bold text-gray-900 dark:text-white">¿Quiénes somos?</h2>
-            <p class="text-gray-500 text-sm italic">Equipo directivo y socios de {{ $settings['firm_short_name'] ?? 'DIMO' }}.</p>
+            <p class="text-gray-500 text-sm italic">Equipo directivo y socios de {{ $settings['firm_short_name'] ?? 'myclegalgroup.com' }}.</p>
         </div>
         <a href="{{ route('admin.team.index') }}" class="text-xs text-gray-400 hover:text-primary transition-colors flex items-center gap-1" title="Gestionar en panel">
             <span class="material-symbols-outlined text-sm">edit</span>

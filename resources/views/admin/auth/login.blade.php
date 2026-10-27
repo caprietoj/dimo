@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Acceso Administrativo | DIMO Law Firm</title>
+    <title>Acceso Administrativo | myclegalgroup.com</title>
 
     <!-- Google Fonts: Inter & Playfair Display -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet"/>
@@ -16,18 +16,44 @@
 
     <style>
         :root {
-            --primary: #1152d4;
-            --primary-dark: #0d3ea4;
-            --background-dark: #0b111e;
+            --primary: #6E1E2E;
+            --primary-dark: #3F0D18;
+            --primary-light: rgba(110, 30, 46, 0.08);
+            --login-bg: #F6EFEF;
         }
 
+        /* Utilidades Bootstrap heredadas -> vino corporativo */
+        .text-primary,
+        a.text-primary,
+        .btn-link {
+            color: var(--primary) !important;
+        }
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+        .border-primary {
+            border-color: var(--primary) !important;
+        }
+        .page-link {
+            color: var(--primary) !important;
+        }
+        .page-item.active .page-link {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #ffffff !important;
+        }
+        .alert-primary {
+            background-color: var(--primary-light) !important;
+            border-color: var(--primary) !important;
+            color: var(--primary) !important;
+        }
         html {
             font-size: 14px !important;
         }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-            background-color: var(--background-dark) !important;
+            background: radial-gradient(circle at 15% 10%, #fdfafa 0%, #f6efef 45%, #eadbdd 100%) !important;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -45,9 +71,9 @@
         }
 
         .card {
-            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border: 1px solid rgba(110, 30, 46, 0.12) !important;
             border-radius: 8px !important;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+            box-shadow: 0 14px 40px rgba(83, 20, 33, 0.14) !important;
             overflow: hidden;
             background-color: #ffffff;
         }
@@ -62,14 +88,14 @@
 
         .form-control:focus {
             border-color: var(--primary) !important;
-            box-shadow: 0 0 0 2px rgba(17, 82, 212, 0.15) !important;
+            box-shadow: 0 0 0 2px rgba(110, 30, 46, 0.15) !important;
         }
 
         .input-group-text {
             border-radius: 0 6px 6px 0 !important;
             border: 1px solid #cbd5e1 !important;
             border-left: 0;
-            background-color: #f8fafc;
+            background-color: #faf6f6;
             height: 38px !important;
             padding: 0.45rem 0.75rem !important;
         }
@@ -81,7 +107,7 @@
             padding: 0.55rem 1.25rem !important;
             font-size: 0.88rem !important;
             font-weight: 700 !important;
-            box-shadow: 0 2px 6px rgba(17, 82, 212, 0.25) !important;
+            box-shadow: 0 2px 6px rgba(110, 30, 46, 0.25) !important;
             transition: all 0.15s ease;
         }
 
@@ -100,7 +126,7 @@
                     <span class="material-symbols-outlined" style="font-size: 18px;">balance</span>
                 </div>
                 <h1 class="h5 font-weight-bold mb-0 text-dark">
-                    DIMO <span class="text-primary font-weight-bold">Colombia</span>
+                    myclegalgroup.com
                 </h1>
             </div>
             <p class="text-muted text-xs mb-0">Panel de Administración Jurídica</p>
@@ -127,7 +153,7 @@
                 <div class="form-group mb-3">
                     <label class="text-xs font-weight-bold text-uppercase text-muted">Correo Electrónico</label>
                     <div class="input-group">
-                        <input type="email" name="email" value="{{ old('email') }}" class="form-control @error('email') is-invalid @enderror" placeholder="email@dimo.com.co" required autofocus>
+                        <input type="email" name="email" value="{{ old('email') }}" class="form-control @error('email') is-invalid @enderror" placeholder="email@myclegalgroup.com" required autofocus>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope text-primary"></span>

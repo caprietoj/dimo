@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Panel de Control') | DIMO Law Firm - AdminLTE</title>
+    <title>@yield('title', 'Panel de Control') | myclegalgroup.com - AdminLTE</title>
 
     <!-- Google Fonts: Inter for UI & Playfair Display for legal headers -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,700&display=swap" rel="stylesheet"/>
@@ -17,17 +17,17 @@
 
     <style>
         :root {
-            --primary: #1152d4;
-            --primary-hover: #0d44b5;
-            --primary-light: rgba(17, 82, 212, 0.08);
-            --bg-sidebar: #0b111e;
+            --primary: #6E1E2E;
+            --primary-hover: #531421;
+            --primary-light: rgba(110, 30, 46, 0.08);
+            --bg-sidebar: #1C1114;
             --bg-sidebar-hover: rgba(255, 255, 255, 0.05);
-            --bg-app: #f8fafc;
+            --bg-app: #F8F4F3;
             --bg-card: #ffffff;
-            --border-subtle: #e2e8f0;
-            --border-hairline: #f1f5f9;
-            --text-main: #0f172a;
-            --text-muted: #64748b;
+            --border-subtle: #E8DEDF;
+            --border-hairline: #F5EFEF;
+            --text-main: #241619;
+            --text-muted: #7B6A6D;
             --text-subtle: #94a3b8;
         }
 
@@ -166,7 +166,7 @@
         .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
             background-color: var(--primary) !important;
             color: #ffffff !important;
-            box-shadow: 0 1px 4px rgba(17, 82, 212, 0.3) !important;
+            box-shadow: 0 1px 4px rgba(110, 30, 46, 0.3) !important;
             font-weight: 600;
         }
 
@@ -249,7 +249,7 @@
 
         .form-control:focus, .custom-select:focus {
             border-color: var(--primary) !important;
-            box-shadow: 0 0 0 2px rgba(17, 82, 212, 0.12) !important;
+            box-shadow: 0 0 0 2px rgba(110, 30, 46, 0.12) !important;
         }
 
         /* Buttons: Crisp, Balanced */
@@ -281,7 +281,7 @@
             background-color: var(--primary) !important;
             border-color: var(--primary) !important;
             color: #ffffff !important;
-            box-shadow: 0 1px 2px rgba(17, 82, 212, 0.2) !important;
+            box-shadow: 0 1px 2px rgba(110, 30, 46, 0.2) !important;
             text-decoration: none !important;
         }
 
@@ -294,7 +294,7 @@
             background-color: var(--primary-hover) !important;
             border-color: var(--primary-hover) !important;
             color: #ffffff !important;
-            box-shadow: 0 2px 5px rgba(17, 82, 212, 0.3) !important;
+            box-shadow: 0 2px 5px rgba(110, 30, 46, 0.3) !important;
             text-decoration: none !important;
             transform: none !important;
         }
@@ -325,7 +325,7 @@
             background-color: var(--primary) !important;
             border-color: var(--primary) !important;
             color: #ffffff !important;
-            box-shadow: 0 1px 2px rgba(17, 82, 212, 0.2) !important;
+            box-shadow: 0 1px 2px rgba(110, 30, 46, 0.2) !important;
         }
 
         .btn-success:hover, .btn-success:focus {
@@ -412,7 +412,7 @@
         }
 
         .custom-control-input:focus ~ .custom-control-label::before {
-            box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px rgba(17, 82, 212, 0.25) !important;
+            box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px rgba(110, 30, 46, 0.25) !important;
         }
 
         /* Metrics / Small Boxes */
@@ -472,11 +472,36 @@
             transition: background-color 0.15s ease, color 0.15s ease;
         }
 
-        /* 1. Azul Corporativo Primario (DIMO Blue) */
-        .small-box.bg-info {
-            background: linear-gradient(135deg, #1152d4 0%, #0d3da0 100%) !important;
+        /* Utilidades Bootstrap heredadas -> vino corporativo */
+        .text-primary,
+        a.text-primary,
+        .btn-link {
+            color: var(--primary) !important;
+        }
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+        .border-primary {
+            border-color: var(--primary) !important;
+        }
+        .page-link {
+            color: var(--primary) !important;
+        }
+        .page-item.active .page-link {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
             color: #ffffff !important;
-            border: 1px solid rgba(17, 82, 212, 0.25) !important;
+        }
+        .alert-primary {
+            background-color: var(--primary-light) !important;
+            border-color: var(--primary) !important;
+            color: var(--primary) !important;
+        }
+        /* 1. Vino Corporativo Primario */
+        .small-box.bg-info {
+            background: linear-gradient(135deg, #6E1E2E 0%, #3F0D18 100%) !important;
+            color: #ffffff !important;
+            border: 1px solid rgba(110, 30, 46, 0.25) !important;
         }
         .small-box.bg-info .inner h3,
         .small-box.bg-info .inner p {
@@ -527,18 +552,18 @@
             border: 1px solid #e2e8f0 !important;
         }
         .small-box.bg-success .inner h3 {
-            color: #1152d4 !important;
+            color: #6E1E2E !important;
         }
         .small-box.bg-success .inner p {
             color: #64748b !important;
         }
         .small-box.bg-success .icon {
-            color: #1152d4 !important;
+            color: #6E1E2E !important;
             opacity: 0.15 !important;
         }
         .small-box.bg-success .small-box-footer {
             background-color: #f8fafc !important;
-            color: #1152d4 !important;
+            color: #6E1E2E !important;
             border-top: 1px solid #e2e8f0 !important;
         }
         .small-box.bg-success .small-box-footer:hover {
@@ -581,7 +606,7 @@
         .small-box.bg-indigo .small-box-footer:hover,
         .small-box.bg-purple .small-box-footer:hover {
             background-color: #cbd5e1 !important;
-            color: #1152d4 !important;
+            color: #6E1E2E !important;
         }
 
         /* Tables & Lists */
@@ -630,13 +655,13 @@
         .badge-primary, .badge-dimo {
             background-color: var(--primary-light) !important;
             color: var(--primary) !important;
-            border: 1px solid rgba(17, 82, 212, 0.25) !important;
+            border: 1px solid rgba(110, 30, 46, 0.25) !important;
         }
 
         .badge-info {
-            background-color: rgba(17, 82, 212, 0.08) !important;
+            background-color: rgba(110, 30, 46, 0.08) !important;
             color: var(--primary) !important;
-            border: 1px solid rgba(17, 82, 212, 0.2) !important;
+            border: 1px solid rgba(110, 30, 46, 0.2) !important;
         }
 
         .badge-warning {
@@ -745,7 +770,7 @@
         .nav-pills .nav-link.active {
             background-color: var(--primary) !important;
             color: #ffffff !important;
-            box-shadow: 0 1px 3px rgba(17, 82, 212, 0.25) !important;
+            box-shadow: 0 1px 3px rgba(110, 30, 46, 0.25) !important;
         }
 
         /* Pagination */
@@ -881,14 +906,14 @@
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <!-- Brand Logo with exact DIMO Law Firm Stitch identity -->
+        <!-- Brand Logo with exact myclegalgroup.com identity -->
         <a href="{{ route('admin.dashboard') }}" class="brand-link d-flex align-items-center px-3 py-2">
             <div class="bg-primary rounded text-white d-flex align-items-center justify-content-center mr-2 shadow-sm" style="width: 28px; height: 28px; min-width: 28px; min-height: 28px;">
                 <span class="material-symbols-outlined" style="font-size: 16px;">balance</span>
             </div>
             <div class="d-flex flex-column" style="line-height: 1.15;">
                 <span class="brand-text font-weight-bold text-white" style="font-size: 0.875rem !important; letter-spacing: -0.01em;">
-                    DIMO <span class="text-primary font-weight-bold">Colombia</span>
+                    myclegalgroup.com
                 </span>
                 <span class="text-muted text-uppercase" style="font-size: 0.58rem; letter-spacing: 0.08em; font-weight: 600;">
                     Panel Administrativo

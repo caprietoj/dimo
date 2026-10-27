@@ -38,7 +38,7 @@ class AuthController extends Controller
             $request->session()->regenerate();
 
             return redirect()->intended(route('admin.dashboard'))
-                ->with('success', 'Bienvenido al panel administrativo de DIMO Law Firm.');
+                ->with('success', 'Bienvenido al panel administrativo de myclegalgroup.com.');
         }
 
         return back()->withErrors([

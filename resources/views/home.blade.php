@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
-    <title>{{ $settings['firm_name'] ?? 'DIMO Colombia' }} - Firma de Abogados | Grid Focused</title>
+    <title>{{ $settings['firm_name'] ?? 'myclegalgroup.com' }} - Firma de Abogados | Grid Focused</title>
     
     <!-- Google Fonts: Inter for UI, Playfair Display for traditional legal headers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,10 +22,13 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#1152d4",
-                        "primary-hover": "#0e41a8",
-                        "background-light": "#f6f6f8",
-                        "background-dark": "#101622",
+                        "primary": "#6E1E2E",
+                        "primary-dark": "#531421",
+                        "wine-100": "#F4DADD",
+                        "wine-200": "#E7BAC1",
+                        "primary-hover": "#531421",
+                        "background-light": "#F8F3F3",
+                        "background-dark": "#171012",
                     },
                     fontFamily: {
                         "display": ["Inter", "sans-serif"],
@@ -64,7 +67,7 @@
                 <span class="material-symbols-outlined text-2xl">balance</span>
             </div>
             <h2 class="text-xl font-black tracking-tight uppercase">
-                DIMO <span class="text-primary">Colombia</span>
+                myclegalgroup.com
             </h2>
         </a>
 
@@ -88,7 +91,7 @@
             </a>
 
             <!-- CTA Button -->
-            <a href="#contacto" class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 shadow-md shadow-primary/20 hover:shadow-primary/30 transition-all flex items-center gap-1.5">
+            <a href="#contacto" class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-primary-dark shadow-md shadow-primary/20 hover:shadow-primary/30 transition-all flex items-center gap-1.5">
                 <span class="material-symbols-outlined text-base">support_agent</span>
                 <span>Consulta Legal</span>
             </a>
@@ -135,10 +138,10 @@
                     {!! str_replace('Cuadrante', '<span class="italic underline decoration-primary/30">Cuadrante</span>', e($settings['hero_title'] ?? 'Excelencia Legal en cada Cuadrante.')) !!}
                 </h1>
                 <p class="text-lg text-gray-600 dark:text-gray-400 max-w-xl mb-8 leading-relaxed">
-                    {{ $settings['hero_description'] ?? 'En DIMO Colombia, integramos la tradición jurídica con una visión moderna y ágil para ofrecer soluciones estratégicas en un mercado global cambiante.' }}
+                    {{ $settings['hero_description'] ?? 'En myclegalgroup.com, integramos la tradición jurídica con una visión moderna y ágil para ofrecer soluciones estratégicas en un mercado global cambiante.' }}
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="#contacto" class="bg-primary text-white px-6 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-blue-700 shadow-md shadow-primary/20 transition-all group">
+                    <a href="#contacto" class="bg-primary text-white px-6 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-primary-dark shadow-md shadow-primary/20 transition-all group">
                         <span>Conocer Más</span>
                         <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </a>
@@ -163,7 +166,7 @@
                 <span class="material-symbols-outlined text-4xl mb-4">gavel</span>
                 <div>
                     <h3 class="grid-header text-3xl mb-2 italic">Integridad Total</h3>
-                    <p class="text-blue-100 text-sm leading-relaxed">
+                    <p class="text-wine-100 text-sm leading-relaxed">
                         Nuestros procesos están blindados por estándares éticos rigurosos y rigor jurídico.
                     </p>
                 </div>
@@ -353,7 +356,7 @@
                         <textarea id="message" name="message" required rows="4" class="bg-background-light dark:bg-gray-800 border-none rounded-lg focus:ring-2 focus:ring-primary text-sm p-3 text-gray-900 dark:text-gray-100 placeholder-gray-400 transition-colors resize-none" placeholder="¿Cómo podemos asesorarle?"></textarea>
                     </div>
 
-                    <button type="submit" id="submit-btn" class="w-full bg-primary text-white py-4 rounded-xl font-black text-lg hover:bg-blue-700 hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center justify-center gap-2">
+                    <button type="submit" id="submit-btn" class="w-full bg-primary text-white py-4 rounded-xl font-black text-lg hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center justify-center gap-2">
                         <span id="btn-text">Enviar Solicitud</span>
                         <span id="btn-spinner" class="material-symbols-outlined hidden animate-spin">progress_activity</span>
                     </button>
@@ -418,7 +421,7 @@
                     <span class="material-symbols-outlined text-xl">balance</span>
                 </div>
                 <h2 class="text-xl font-black tracking-tight uppercase">
-                    DIMO <span class="text-primary">Colombia</span>
+                    myclegalgroup.com
                 </h2>
             </div>
             <p class="text-gray-400 text-sm max-w-xs leading-relaxed">
@@ -458,7 +461,7 @@
     </div>
     <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
         <div>
-            © {{ date('Y') }} DIMO Colombia. Todos los derechos reservados. Abogados Registrados en el CSJ.
+            © {{ date('Y') }} myclegalgroup.com. Todos los derechos reservados. Abogados Registrados en el CSJ.
         </div>
         <div class="flex items-center gap-4">
             <a href="{{ route('admin.dashboard') }}" class="hover:underline">Portal Administrativo</a>

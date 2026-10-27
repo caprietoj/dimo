@@ -1,4 +1,4 @@
-# DIMO Colombia – Plataforma Web y Panel de Administración Jurídica
+# myclegalgroup.com – Plataforma Web y Panel de Administración Jurídica
 
 > **DIMO – Defensa, Investigación y Metodologías Operacionales**  
 > Portal web corporativo de alta precisión legal y panel de administración integral (AdminLTE 3) para la gestión de contenidos, áreas de práctica, equipo de abogados, bandeja de consultas y control de accesos.
@@ -48,7 +48,7 @@ php artisan key:generate
 
 Edite las variables principales en `.env` según su servidor:
 ```ini
-APP_NAME="DIMO Colombia"
+APP_NAME="myclegalgroup.com"
 APP_ENV=production
 APP_DEBUG=false
 APP_URL=https://su-dominio.com

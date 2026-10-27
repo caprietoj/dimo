@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Consultoría de Alto Nivel - DIMO Colombia (Grid Focused)')
+@section('title', 'Consultoría de Alto Nivel - myclegalgroup.com (Grid Focused)')
 
 @section('content')
 <!-- Grid Focused Architecture for "Consultoría de Alto Nivel" -->
@@ -62,7 +62,7 @@
                     <textarea id="message" name="message" required rows="5" class="bg-background-light dark:bg-gray-800 border-none rounded-lg focus:ring-2 focus:ring-primary text-sm p-3 text-gray-900 dark:text-gray-100 placeholder-gray-400 resize-none" placeholder="¿Cómo podemos ayudarle?"></textarea>
                 </div>
 
-                <button type="submit" id="submit-btn" class="w-full bg-primary text-white py-4 rounded-xl font-black text-lg hover:bg-blue-700 hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center justify-center gap-2">
+                <button type="submit" id="submit-btn" class="w-full bg-primary text-white py-4 rounded-xl font-black text-lg hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center justify-center gap-2">
                     <span id="btn-text">Enviar Solicitud</span>
                     <span id="btn-spinner" class="material-symbols-outlined hidden animate-spin">progress_activity</span>
                 </button>

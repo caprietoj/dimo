@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
-    <title>@yield('title', 'DIMO Colombia - Grid Focused')</title>
+    <title>@yield('title', 'myclegalgroup.com - Grid Focused')</title>
 
     <!-- Google Fonts: Inter for UI, Playfair Display for legal headers -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet"/>
@@ -21,9 +21,12 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#1152d4",
-                        "background-light": "#f6f6f8",
-                        "background-dark": "#101622",
+                        "primary": "#6E1E2E",
+                        "primary-dark": "#531421",
+                        "wine-100": "#F4DADD",
+                        "wine-200": "#E7BAC1",
+                        "background-light": "#F8F3F3",
+                        "background-dark": "#171012",
                     },
                     fontFamily: {
                         "display": ["Inter", "sans-serif"],
@@ -65,7 +68,7 @@
             </div>
             <div class="flex flex-col">
                 <h2 class="text-xl font-black tracking-tight uppercase text-gray-900 dark:text-white leading-tight">
-                    {{ $settings['firm_short_name'] ?? 'DIMO' }} <span class="text-primary">Colombia</span>
+                    {{ $settings['firm_short_name'] ?? 'myclegalgroup.com' }}
                 </h2>
                 <span class="text-[10px] md:text-xs text-gray-500 dark:text-gray-400 font-medium leading-tight tracking-tight">
                     {{ $settings['firm_slogan'] ?? 'La Ciencia del Derecho aplicada a la Certeza de su Defensa.' }}
@@ -85,7 +88,7 @@
                 <a class="px-3.5 py-2 rounded-lg text-sm font-semibold transition-all {{ request()->routeIs('services') ? 'text-primary bg-primary/10 font-bold shadow-sm' : 'text-gray-700 dark:text-gray-300 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800' }}" href="{{ route('services') }}">
                     Estrategias y Soluciones
                 </a>
-                <a class="px-4 py-2 rounded-lg text-sm font-bold transition-all {{ request()->routeIs('contact') ? 'bg-primary text-white shadow-md shadow-primary/20 hover:bg-blue-700' : 'bg-primary/10 text-primary hover:bg-primary hover:text-white' }}" href="{{ route('contact') }}">
+                <a class="px-4 py-2 rounded-lg text-sm font-bold transition-all {{ request()->routeIs('contact') ? 'bg-primary text-white shadow-md shadow-primary/20 hover:bg-primary-dark' : 'bg-primary/10 text-primary hover:bg-primary hover:text-white' }}" href="{{ route('contact') }}">
                     Consultoría de Alto Nivel
                 </a>
             </nav>
@@ -134,7 +137,7 @@
             <span class="material-symbols-outlined text-lg">balance</span>
             <span>Estrategias y Soluciones</span>
         </a>
-        <a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-bold bg-primary text-white hover:bg-blue-700 transition-colors" href="{{ route('contact') }}">
+        <a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-bold bg-primary text-white hover:bg-primary-dark transition-colors" href="{{ route('contact') }}">
             <span class="material-symbols-outlined text-lg">support_agent</span>
             <span>Consultoría de Alto Nivel</span>
         </a>
@@ -143,7 +146,7 @@
                 <span class="material-symbols-outlined text-sm">tune</span>
                 <span>Panel AdminLTE</span>
             </a>
-            <span class="text-[10px] text-gray-400">DIMO Colombia</span>
+            <span class="text-[10px] text-gray-400">myclegalgroup.com</span>
         </div>
     </div>
 </div>
@@ -166,7 +169,7 @@
                 </div>
                 <div class="flex flex-col">
                     <h2 class="text-xl font-black tracking-tight uppercase text-white leading-tight">
-                        {{ $settings['firm_short_name'] ?? 'DIMO' }} <span class="text-primary">Colombia</span>
+                        {{ $settings['firm_short_name'] ?? 'myclegalgroup.com' }}
                     </h2>
                     <span class="text-[10px] md:text-xs text-gray-400 font-medium leading-tight tracking-tight">
                         {{ $settings['firm_slogan'] ?? 'La Ciencia del Derecho aplicada a la Certeza de su Defensa.' }}
@@ -174,7 +177,7 @@
                 </div>
             </a>
             <p class="text-sm font-bold text-gray-200">
-                {{ $settings['firm_name'] ?? 'DIMO – Defensa, Investigación y Metodologías Operacionales.' }}
+                {{ $settings['firm_name'] ?? 'myclegalgroup.com' }}
             </p>
             <p class="text-gray-400 text-sm leading-relaxed italic">
                 "{{ $settings['footer_slogan'] ?? 'Excelencia jurídica y rigor técnico al servicio de su seguridad y patrimonio.' }}"
@@ -251,7 +254,7 @@
         }
     }
 
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.getItem('color-theme') === 'dark') {
         document.documentElement.classList.add('dark');
         document.documentElement.classList.remove('light');
     } else {

@@ -43,7 +43,7 @@
                     <i class="fas fa-arrow-left mr-1"></i> Volver a la lista
                 </a>
                 <div>
-                    <a href="mailto:{{ $message->email }}?subject=Re: {{ urlencode($message->subject) }}&body={{ urlencode('Estimado(a) ' . $message->name . ",\n\nEn respuesta a su solicitud de consulta en DIMO Law Firm:\n\n") }}" class="btn btn-primary btn-sm">
+                    <a href="mailto:{{ $message->email }}?subject=Re: {{ urlencode($message->subject) }}&body={{ urlencode('Estimado(a) ' . $message->name . ",\n\nEn respuesta a su solicitud de consulta en myclegalgroup.com:\n\n") }}" class="btn btn-primary btn-sm">
                         <i class="fas fa-reply mr-1"></i> Responder por Correo
                     </a>
                     <form action="{{ route('admin.messages.destroy', $message->id) }}" method="POST" onsubmit="return confirm('¿Eliminar definitivamente este mensaje?');" class="d-inline ml-2">

@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Estrategias y Soluciones - DIMO Colombia (Grid Focused)')
+@section('title', 'Estrategias y Soluciones - myclegalgroup.com (Grid Focused)')
 
 @section('content')
 <!-- Grid Focused Architecture for "Estrategias y Soluciones" -->
@@ -13,7 +13,7 @@
                 Estrategias y Soluciones Jurídicas
             </h1>
             <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                Catálogo especializado de áreas de práctica bajo la metodología y rigor de DIMO Colombia.
+                Catálogo especializado de áreas de práctica bajo la metodología y rigor de myclegalgroup.com.
             </p>
         </div>
         <a href="{{ route('contact') }}" class="text-primary text-sm font-bold flex items-center gap-1 hover:underline">
@@ -60,7 +60,7 @@
                 <li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span> Análisis jurisprudencial de cierre aplicable a cada sector.</li>
             </ul>
         </div>
-        <a href="{{ route('contact') }}" class="bg-primary text-white text-center py-2.5 rounded-lg text-sm font-bold hover:bg-blue-700 transition-colors">
+        <a href="{{ route('contact') }}" class="bg-primary text-white text-center py-2.5 rounded-lg text-sm font-bold hover:bg-primary-dark transition-colors">
             Consultar Auditoría
         </a>
     </div>
@@ -81,7 +81,7 @@
                 <li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span> Control de prueba técnica y contrainterrogatorios periciales.</li>
             </ul>
         </div>
-        <a href="{{ route('contact') }}" class="bg-primary text-white text-center py-2.5 rounded-lg text-sm font-bold hover:bg-blue-700 transition-colors">
+        <a href="{{ route('contact') }}" class="bg-primary text-white text-center py-2.5 rounded-lg text-sm font-bold hover:bg-primary-dark transition-colors">
             Consultar Litigio
         </a>
     </div>
